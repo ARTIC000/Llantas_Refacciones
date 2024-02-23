@@ -1,6 +1,6 @@
 /* Estilo para el cuerpo de la página */
 body {
-  background-color: #1E1E1E;
+  background-color: #242525;
   color: white;
   font-family: Arial, sans-serif;
   
@@ -16,8 +16,9 @@ body {
 
 /* Estilo para los productos */
 .card {
-  
+  background-color: #242525;
   border: none;
+
 }
 
 .card-title {
@@ -38,7 +39,7 @@ body {
 .container {
   max-width: 1200px;
   padding-top: 5%;
-  
+  background-color: #242525;
 }
 
 /* Estilo para los márgenes entre los productos */
@@ -80,6 +81,7 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+  background-color: #242525;
 }
 
 h2 {
@@ -90,4 +92,14 @@ h2 {
 h2:hover {
   text-decoration: underline; /* Agregamos subrayado al pasar el cursor sobre el texto */
   cursor: pointer; /* Cambiamos el cursor a una mano al pasar sobre el texto */
+}
+
+.test{
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.test:hover{
+  text-decoration: underline;
 }

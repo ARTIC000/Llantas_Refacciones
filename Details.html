@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/details.css">
+  <link rel="stylesheet" href="Css/Style.css">
+  <style>
+    /* Custom CSS for styling */
+    
+    .additional-info {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <img src="/Img/Logo.jpeg" alt="Logo" height="80" class="navbar-logo">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="/Store.html">Store</a>
+          <a class="nav-link" href="#">About</a>
+        </div>
+        <div class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="userDropdown">
+              <a class="dropdown-item" href="LogIn.html">Log In</a>
+              <a class="dropdown-item" href="#">settings</a>
+              <a class="dropdown-item" href="/php/logout.php">Log out</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="Img/image 9.png" alt="Product Image" class="product-img">
+      </div>
+      <div class="col-md-6">
+        <img src="Img/Brand.png" alt="" class="class-img">
+        <h2>Llanta 205/55 R16 PIRELLI CINTURATO P7 (*) 91V</h2><br>
+        <p class="dt">Ref.2055516477391V</p>
+        <p class="price">$1,800</p>
+        <p class="dt">Entrega en sucursal: 1 a 5 días hábiles dependiendo a la <br> disponibilidad del producto seleccionado en la tienda <br> elegida.</p><br>
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" class="form-control" value="1">
+        </div>
+        <button type="button" class="btn btn-primary buy-btn">Buy Now</button>
+        <button type="button" class="btn btn-secondary">Add to Cart</button>
+      </div> 
+    </div>
+  </div>
+
+  <!-- Additional Container -->
+  <div class="container mt-5 additional-info">
+    <div class="row">
+      <div class="col">
+        <a href="Login.html"><p>Descripcion</p></a>
+      </div>
+      <div class="col">
+        <a href="Login.html"><p>Detalles</p></a>
+      </div>
+      <div class="col">
+        <a href="Login.html"><p>Garantia</p></a>
+      </div>
+      <div class="col">
+        <a href="Login.html"><p>Reviews</p></a>
+      </div>
+    </div>
+  </div>
+  <br>
+  
+<p class="ttl">La llanta <b>205/55 R16 PIRELLI CINTURATO P7 (*) 91V</b> se caracteriza por:</p>
+<p>-Ser una llanta todo terreno que presenta una excelente tracción y resistencia al desgaste</p>
+<p>-Cuenta con un patrón auto-limpieza en su banda de rodamiento</p>
+<p>-Reduce las sacudidas más intensas en las distintas superficies irregulares</p>
+<p>-Mayor seguridad durante la conducción en curvas y frenado</p>
+<p>-Resistente al acuaplaneo y reducción de ruido durante la conducción</p>
+<p>-Ofrece un agarre confortable en cualquier condición climática</p>
+<p>-Magnífica tracción en cualquier terreno, desde gravilla hasta lodo</p>
+  
+  <div class="container mt-5">
+    <h3>Recommended Products</h3><br>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="Img/image-18.png" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <a href="Login.html"><h5 class="card-title">LLANTA MAXTREK</h5></a>
+            <p class="card-text">$1,690</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="Img/image-19.png" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <a href="Login.html"><h5 class="card-title">2 LLANTAS FARROAD</h5></a>
+            <p class="card-text">$2,380</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="Img/image-20.png" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <a href="Login.html"><h5 class="card-title">LLANTA SUMITOMO</h5></a>
+            <p class="card-text">$3,350</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card product-card">
+          <img src="Img/image-21.png" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <a href="Login.html"><h5 class="card-title">LLANTA HAIDA</h5></a>
+            <p class="card-text">$1,850</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
