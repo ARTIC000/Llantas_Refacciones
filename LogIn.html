@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="/Css/Style.css">
-    <title>Log In</title>
-</head>
-<body style="background-color: #A90015;">
-    <div class="sidenav">
-        <div class="login-main-text">
-           <h2>UNIVERSALES LLANTAS Y SUSPENSIONES</h2>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore architecto, ullam reprehenderit hic id facilis provident corporis error minima eum illo ut unde esse iusto quia cumque, consectetur aliquid. Deserunt?.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/login.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="login">
+        <h2>Login</h2>
+        <form class="logim" action="/php/login.php" method="post">
+          <div class="input">
+            <label>Name</label>
+            <input type="text" name="username" placeholder="name...." />
+          </div> 
+          <div class="input">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="enter your password..." />
+          </div>
+          <button type="submit">Sign in</button>
+        </form>
+
+        <p>or continue with</p>
+        <div class="icons">
+          <div class="img">
+            <a href="#" target="_blank">
+              <i class="fab fa-google"></i>
+            </a>
+          </div>
+          <div class="img">
+            <a href="#" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+          <div class="img">
+            <a href="#" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
         </div>
-     </div>
-     <div class="main">
-        <div class="col-md-6 col-sm-12">
-           <div class="login-form">
-              <form class="login-data">
-                 <img src="/Img/Logo.jpeg" alt="Logo" class="logo" >
-                 <div class="form-group">
-                    <label>User Name</label>
-                    <input type="text" class="form-control" placeholder="User Name">
-                 </div>
-                 <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" placeholder="Password">
-                 </div>
-                 <button type="submit" class="btn btn-black">Login</button>
-                 <button type="submit" class="btn btn-secondary">Register</button>
-              </form>
-           </div>
-        </div>
-     </div>
-     <footer></footer>
-</body>
+        <p>Don't have an account yet? <span><a href="#" class="register-link">Register Here</a></span></p>
+      </div>
+    </div>
+  </body>
 </html>
