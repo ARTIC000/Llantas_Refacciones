@@ -22,24 +22,28 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
-    echo $row['id_rol'][0];
+    echo $row['id_rol'];
     session_start();
-    // Verificar si el usuario es admin 1 rol de admin)
-
+    
+    // Verificar el rol del usuario
     if ($row['id_rol'] == 1) {
         $_SESSION['username'] = $username;
-        $_SESSION['id_usuario'] = $row[0]['id_usuario'];
-        $_SESSION['correo'] = $row[0]['Correo'];
-        $_SESSION['apellido'] = $row[0]['apellido'];
-        $_SESSION['direccion'] = $row[0]['direccion'];
+        $_SESSION['id_rol'] = $row['id_rol'];
+        $_SESSION['id_usuario'] = $row['id_usuario'];
+        $_SESSION['correo'] = $row['Correo'];
+        $_SESSION['apellido'] = $row['apellido'];
+        $_SESSION['direccion'] = $row['direccion'];
         header('Location: ../dashboard.php');
-    } else if ($row[0]['id_rol'] == 2) {
+
+    } else if ($row['id_rol'] == 2) {
         $_SESSION['username'] = $username;
-        $_SESSION['id_usuario'] = $row[0]['id_usuario'];
-        $_SESSION['correo'] = $row[0]['Correo'];
-        $_SESSION['apellido'] = $row[0]['apellido'];
-        $_SESSION['direccion'] = $row[0]['direccion'];
-        header('Location: ../index.html');
+        $_SESSION['id_rol'] = $row['id_rol'];
+        $_SESSION['id_usuario'] = $row['id_usuario'];
+        $_SESSION['correo'] = $row['Correo'];
+        $_SESSION['apellido'] = $row['apellido'];
+        $_SESSION['direccion'] = $row['direccion'];
+       header('Location: ../index.html');
+
     } else {
         echo "No tienes permisos para acceder. <a href='../LogIn.html'>Intentar de nuevo</a>";
     }
@@ -47,7 +51,6 @@ if ($result->num_rows > 0) {
 } else {
     echo "Inicio de sesión fallido. <a href='../LogIn.html'>Intentar de nuevo</a>";
 }
-
 
 $conn->close();
 ?>
