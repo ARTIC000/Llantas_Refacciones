@@ -17,7 +17,7 @@ body {
 /* Estilo para los productos */
 .card {
   background-color: #242525;
-  border: none;
+  border: 1px solid white;
 
 }
 
@@ -28,7 +28,8 @@ body {
 }
 
 .card-img-top {
-  height: 200px;
+
+ 
   object-fit: cover;
 }
 
@@ -102,4 +103,60 @@ h2:hover {
 
 .test:hover{
   text-decoration: underline;
+}
+
+.product-card{
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.col-md-3{
+  margin-bottom: 5%;
+}
+
+.col-md-3:hover{
+  transform: scale(1.1);
+}
+
+
+
+@media (min-width: 992px) {
+  .navbar {
+    padding-top: 20px;
+  }
+
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+    /* Set a specific background color */
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 120px;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #dc1c0b66;
+    margin: auto;
+    margin-bottom: -8px;
+    width: 50%;
+    padding-top: 5px;
+  }
+
+  .jumbotron {
+    margin-top: -90px;
+    height: 640px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 4em;
+    margin-top: 40px;
+  }
 }

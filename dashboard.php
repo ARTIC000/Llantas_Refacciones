@@ -69,7 +69,7 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 									<ul class="navbar-nav">
 										<li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet"><i class="fas fa-comments text-muted fa-lg"></i></a></li>
 										<li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet"><i class="fas fa-bell text-muted fa-lg"></i></a></li>
-										<li class="nav-item ml-md-auto"><a href="#" class="nav-link" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+										<li class="nav-item ml-md-auto"><a href="/php/logout.php" class="nav-link" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -182,6 +182,19 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 			</div>
 		</section>
 		<!-- end of cards-->
+
+		<!-- Formulario --->
+		<section>
+			<div class="container">
+				<div class="row mb-5">
+				<div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+				<?php
+					include 'php/formulario.php';
+				?>
+				</div>
+			</div>
+		</section>
+
 
 		<!-- tables-->
 
@@ -636,7 +649,7 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-		<script src="Js/dasha.js"></script>
+		<script src="Js/dash.js"></script>
   	</body>
 </html>
 

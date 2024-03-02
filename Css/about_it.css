@@ -1,0 +1,128 @@
+.overlay-text {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    }
+  
+.overlay-text h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    padding-bottom: 25%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   } 
+
+  /* Estilo para la barra de búsqueda */
+.navbar {
+    margin-bottom: 0; /* Override the default margin */
+   }
+  
+/* Estilo para el cuerpo de la página */
+body {
+    background-color: #242525;
+    color: white;
+    font-family: Arial, sans-serif;
+   }
+
+/* card */
+.card {
+    top: 15%;
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+  }
+  
+.card-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: #230404;
+  }
+
+
+@media (min-width: 992px) {
+	.navbar {
+		padding-top: 20px;
+	}
+
+	.navbar-brand,
+	.nav-link {
+		color: white;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	}
+
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 100px;
+	}
+
+	.nav-link:hover::after,
+	.nav-link.active::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #dc1c0b66;
+		margin: auto;
+		margin-bottom: -8px;
+		width: 50%;
+		padding-top: 5px;
+	}
+
+	.jumbotron {
+		margin-top: -90px;
+		height: 640px;
+	}
+
+	.jumbotron .display-4 {
+		font-size: 4em;
+		margin-top: 40px;
+	}
+}
+
+
+.jumbotron,
+.info-panel {
+	background-color: rgba(32, 28, 28, 0.793);
+	margin-top: auto;
+	z-index: 1;
+}
+
+.logo-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.logo-image {
+	height: 2em;
+	margin-bottom: 100px;
+	margin-right: 20px;
+}
+
+.navbar.fixed-top {
+	background-color: black;
+	z-index: 1000;
+}
+
+.navbar.fixed-top .navbar-nav .dropdown-menu {
+	background-color: rgba(132, 32, 32, 0.649);
+}
+
+.navbar.fixed-top .navbar-nav .dropdown-menu a {
+	color: white;
+}
+
+.navbar.fixed-top .navbar-nav .dropdown-menu a:hover {
+	background-color: #333;
+}
