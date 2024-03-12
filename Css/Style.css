@@ -71,7 +71,7 @@
 	color: #acacac;
 }
 .workingspace {
-	background-color: #f0f0f0; /* Fondo grisaseo */
+	background-color: #f7000043; /* Fondo grisaseo */
 	padding: 20px; 
   }
   
@@ -93,7 +93,7 @@
   
   .workingspace p {
 	font-size: 18px;
-	color: #ACACAC;
+	color: #2c2020;
 	font-weight: 200;
   }
   
@@ -200,28 +200,29 @@ body {
 	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.05);
 }
 
+/* Animacion */
 .info-panel {
 	opacity: 0;
-	transform: translatey(50px);
-	transition: opacity 1.8s ease-in-out, transform 1.8s ease-in- out;
-}
-
-.info-panel.show {
+	transform: translateY(50px);
+	transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+  
+  .info-panel.show {
 	opacity: 1;
-	transform: translatey(0);
-}
-
-.workingspace {
+	transform: translateY(0);
+  }
+  
+  .workingspace {
 	opacity: 0;
-	transform: translatey(50px);
-	transition: opacity 1.8s ease-in-out, transform 1.8s ease-in- out;
-}
-
-.workingspace.show {
+	transform: translateY(50px);
+	transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+  
+  .workingspace.show {
 	opacity: 1;
-	transform: translatey(0);
-}
-
+	transform: translateY(0);
+  }
+  
 .social-icons{
 	color: white;
 	font-size: 24px;
