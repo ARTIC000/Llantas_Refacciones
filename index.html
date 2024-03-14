@@ -12,42 +12,40 @@
   <title>Landing Page</title>
 </head>
 <body style="background-color: black;">
-
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <img src="/Img/Logo.jpeg" alt="Logo" height="80" class="navbar-logo">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="/Store.html">Store</a>
-          <a class="nav-link" href="about_it.html">About</a>
-        </div>
-        <div class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-user"></i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="userDropdown">
-              <a class="dropdown-item" href="LogIn.html">Log In</a>
-              <a class="dropdown-item" href="/php/logout.php">Log out</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-          </li>
-        </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <img src="/Img/Logo.jpeg" alt="Logo" height="80" class="navbar-logo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="/Store.html">Store</a>
+        <a class="nav-link" href="about_it.html">About</a>
+      </div>
+      <div class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="LogIn.html">Log In</a>
+            <a class="dropdown-item" href="/php/logout.php">Log out</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
       </div>
     </div>
-  </nav>
-
- <!-- Landing Principal -->
-<div class="jumbotron jumbotron-fluid text-left">
+  </div>
+</nav>
+<!-- Landing Principal -->
+<div class="jumbotron jumbotron-fluid text-left mt-5 pt-5 animated-section" style="position: relative; z-index: 1;">
   <div class="container text-left">
     <h1 class="display-4">PROFESSIONAL CAR REPAIR <br> AND MAINTENANCE</br></h1>
     <h3 class="display-5"><i>We are focused on providing our clients with the highest <br> of quality and excellent customer support.</i></h3>
@@ -63,51 +61,70 @@
   </div>
 </div>
 
-
-  <!-- Cards -->
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-sm mb-3" style="margin-bottom: top; position: flex; z-index: 1; color: aliceblue;">
-        <div class="info-panel">
-          <h2 class="display-5">Performance<br>Check</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laboriosam officiis, esse sint at beatae sunt iusto corrupti quam dicta, reiciendis aut facere, eveniet quis error autem praesentium vitae excepturi!</p>
-        </div>
-      </div>
-  
-      <div class="col-lg mb-3" style="margin-bottom: -30px; position: relative; z-index: 1; color: aliceblue;">
-        <div class="info-panel">
-          <h2 class="display-5">Auto<br>Repair</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eveniet laboriosam, eum ex laudantium, sunt optio quas repellendus dignissimos corrupti aliquid consequatur officiis delectus aperiam ducimus incidunt aut quo voluptas?.</p>
-        </div>
-      </div>
-  
-      <div class="col-lg mb-3" style="margin-bottom: -30px; position: relative; z-index: 1; color: aliceblue;">
-        <div class="info-panel">
-          <h2 class="display-5">Fleet<br>Services</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae fugit tempore, reiciendis minima laboriosam excepturi dolores quo, dignissimos ipsum quam sunt at est? Similique, illum suscipit consequuntur esse omnis inventore.</p>
-        </div>
+<!-- Cards -->
+<div class="container" style="position: relative; z-index: 2; margin-top: -100px;">
+  <div class="row justify-content-center">
+    <div class="col-sm mb-3" style="color: rgb(183, 180, 176);">
+      <div class="info-panel">
+        <h2 class="display-5">Performance<br>Check</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laboriosam officiis, esse sint at beatae sunt iusto corrupti quam dicta, reiciendis aut facere, eveniet quis error autem praesentium vitae excepturi!</p>
       </div>
     </div>
-  </div>
 
- <!-- Servicios -->
- <div class="row workingspace" style="background-color: rgba(24, 23, 23, 0.74);">
-  <div class="col-lg-4">
-    <img src="/Img/Mid-Landing.jpg" alt="Working Space" class="img-fluid" width="60%" style="margin-left: 10rem;">
-  </div>
-  <div class="col-lg-6"  style="margin-left: 10rem; color:aliceblue;";>
-    <h2> brings our services to your Home</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quia qui, excepturi nihil sit porro dolores beatae harum fuga ad debitis fugiat maiores totam quae soluta est amet nisi placeat!.</p>
-    <a href="#" class="btn btn-danger btn-gallery">Agendar una cita</a>
+    <div class="col-lg mb-3" style="color: rgb(183, 180, 176);">
+      <div class="info-panel">
+        <h2 class="display-5">Auto<br>Repair</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eveniet laboriosam, eum ex laudantium, sunt optio quas repellendus dignissimos corrupti aliquid consequatur officiis delectus aperiam ducimus incidunt aut quo voluptas?.</p>
+      </div>
+    </div>
+
+    <div class="col-lg mb-3" style="color: rgb(183, 180, 176);">
+      <div class="info-panel">
+        <h2 class="display-5">Fleet<br>Services</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae fugit tempore, reiciendis minima laboriosam excepturi dolores quo, dignissimos ipsum quam sunt at est? Similique, illum suscipit consequuntur esse omnis inventore.</p>
+      </div>
+    </div>
   </div>
 </div>
 
 
+ <!-- Servicios -->
+ <div class="row workingspace animated-section" style="background-color: rgba(24, 23, 23, 0.74); margin-top: 7%;">
+  <div class="col-lg-4">
+    <img src="/Img/Mid-Landing.jpg" alt="Working Space" class="img-fluid" width="70%" style="margin-left: 10rem; margin-top: 2rem;border-radius: 10%;">
+  </div>
+  <div class="col-lg-6"  style="margin-left: 10rem; color:aliceblue;">
+    <h2> brings our services to your Home</h2>
+    <p style="color: rgb(183, 180, 176);">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat quia qui, excepturi nihil sit porro dolores beatae harum fuga ad debitis fugiat maiores totam quae soluta est amet nisi placeat!.</p>
+    <a href="#" class="btn btn-danger btn-gallery">Get an appointment now</a>
+  </div>
+</div>
+
+<!-- Circles -->
+<div class="circle-container" style="margin-top: 7%;">
+  <div class="circle-row">
+    <div class="circle" data-info="info1">
+      <div class="circle-inner">1</div>
+    </div>
+    <div class="circle" data-info="info2">
+      <div class="circle-inner">2</div>
+    </div>
+    <div class="circle" data-info="info3">
+      <div class="circle-inner">3</div>
+    </div>
+  </div>
+  <div class="info-container" style="color: aliceblue; text-align: center; margin-left: 5%; margin-right: 5%;">
+    <div id="info1" class="info-text"><h2 style="color: red;">Inspection</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus ea qui velit facilis nobis earum, quod perferendis eligendi facere placeat optio nisi? Provident adipisci officiis ipsam exercitationem ut rerum.</p></div>
+    <div id="info2" class="info-text"><h2 style="color: red;">Diagnostic</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente quo, modi nihil eligendi sint iusto reprehenderit alias, dolorem quidem, nulla ipsam. Id sequi explicabo cum blanditiis consequatur molestiae repellendus molestias.</p></div>
+    <div id="info3" class="info-text"><h2 style="color: red;">Upgrades</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores nostrum ipsam aliquam aliquid non ullam in quod dignissimos iusto atque nisi, velit adipisci, pariatur molestias facere reprehenderit expedita libero provident?</p></div>
+  </div>
+</div>
+
 <!-- Table of content -->
-<!-- <iframe src="tablecontent.html" frameborder="0" class="table-content" ></iframe>   -->
+<iframe src="tablecontent.html" frameborder="0" class="table-content" style="margin-top: 7%; margin-left: 26%;"></iframe>  
 
 <!-- Info contact -->
-<div class="container mt-5">
+<div class="container mt-5 animated-section" style="margin-top: 10%;">
   <div class="row">
     <!-- Formulario -->
     <div class="col-md-7" style="background-color:rgba(24, 23, 23, 0.74);">
@@ -115,26 +132,26 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputNombre">Nombre</label>
-            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" style="background-color: black;">
+            <input type="text" class="form-control animated-input" id="inputNombre" placeholder="Nombre" style="background-color: black;">
           </div>
           <div class="form-group col-md-6">
             <label for="inputTelefono">Teléfono</label>
-            <input type="text" class="form-control" id="inputTelefono" placeholder="Teléfono"style="background-color: black;">
+            <input type="text" class="form-control animated-input" id="inputTelefono" placeholder="Teléfono"style="background-color: black;">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputCarModel">Modelo de Auto</label>
-            <input type="text" class="form-control" id="inputCarModel" placeholder="Modelo de Auto"style="background-color: black;">
+            <input type="text" class="form-control animated-input" id="inputCarModel" placeholder="Modelo de Auto"style="background-color: black;">
           </div>
           <div class="form-group col-md-6">
             <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email"style="background-color: black;">
+            <input type="email" class="form-control animated-input" id="inputEmail" placeholder="Email"style="background-color: black;">
           </div>
         </div>
         <div class="form-group">
           <label for="inputMessage">Mensaje</label>
-          <textarea class="form-control" id="inputMessage" rows="4" placeholder="Mensaje" style="background-color: black;"></textarea>
+          <textarea class="form-control animated-input" id="inputMessage" rows="4" placeholder="Mensaje" style="background-color: black;"></textarea>
         </div>
         <a href="#" class="btn btn-danger btn-gallery">Get an appointment</a>
       </form>
@@ -149,9 +166,9 @@
       <div class="mb-4">
         <h4>Redes Sociales</h4>
         <div class="social-icons">
-          <a href="#" class="mr-3"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="mr-3"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="mr-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="mr-3" style="color: rgb(153, 26, 26);"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="mr-3" style="color: rgb(153, 26, 26);"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="mr-3" style="color: rgb(153, 26, 26);"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
       <!-- Dirección y Número de Teléfono -->
@@ -163,10 +180,40 @@
     </div>
   </div>
 </div>
+
+
 <!-- Footer -->
-  <footer>
-    
-  </footer>
+<footer class="bg mt-5 pt-5" style="background-color: rgba(23, 21, 21, 0.74);">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" style="color: aliceblue;">
+        <h5>Universales llantas y suspensiones.</h5>
+        <p>Excellent treatment and service</p>
+      </div>
+      <div class="col-md-4" style="color: aliceblue;">
+        <h5>Capabilities</h5>
+        <p>Explore<br>Visit<br>Follow</p>
+      </div>
+      <div class="col-md-4" style="color: aliceblue;">
+        <h5>Our social medias</h5>
+        <p>
+          <a href="https://www.instagram.com/" target="_blank" style="color: rgb(153, 26, 26);">Instagram</a><br>
+          <a href="https://twitter.com/" target="_blank" style="color: rgb(153, 26, 26);">Twitter</a><br>
+          <a href="https://www.Facebook.com" target="_blank" style="color: rgb(153, 26, 26);">Facebook</a><br>
+          <a href="mailto:engage@weareenvoy.com" style="color: rgb(153, 26, 26);">universalesllantas@gmail.com</a><br>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="color: rgb(230, 220, 220);">
+        <p class="text-center">
+          &copy; 2024 Universal llantas. All Rights Reserved.<br>
+          for the connected world.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/Js/anim.js"></script>

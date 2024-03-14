@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500&display=swap'); 
-/* Resto del código CSS */
+
+body {
+	overflow-x: hidden;
+  }
+
 .jumbotron {
     background: url(/Img/Back_Landing.jpeg) no-repeat center center;
     background-size: cover;
@@ -71,7 +75,7 @@
 	color: #acacac;
 }
 .workingspace {
-	background-color: #f7000043; /* Fondo grisaseo */
+	background-color: #f7000043; 
 	padding: 20px; 
   }
   
@@ -200,6 +204,72 @@ body {
 	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.05);
 }
 
+
+/* Circle */
+.circle-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 22rem;
+	margin-top: 7rem;
+  }
+  
+  .circle-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+	position: relative;
+  }
+  
+  .circle {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #7a0909;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+	margin: 0 80px;
+  }
+  
+  .circle:hover {
+	transform: scale(1.1);
+  }
+  
+  .circle-inner {
+	font-size: 50px;
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .info-container {
+	display: none;
+  }
+  
+  .info-text {
+	font-size: 18px;
+	display: none;
+  }
+  
+  .info-text.active {
+	display: block;
+  }
+  
+  .circle.selected::before {
+	content: "";
+	position: absolute;
+	top: -50%;
+	bottom: -50%;
+	left: -50%;
+	right: -50%;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+  }
+
 /* Animacion */
 .info-panel {
 	opacity: 0;
@@ -222,7 +292,29 @@ body {
 	opacity: 1;
 	transform: translateY(0);
   }
-  
+
+  .table-content{
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+
+  .table-content.show {
+	opacity: 1;
+	transform: translateY(0);
+  }
+
+  .circle-container{
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+
+  .circle-container.show {
+	opacity: 1;
+	transform: translateY(0);
+  }
+
 .social-icons{
 	color: white;
 	font-size: 24px;
