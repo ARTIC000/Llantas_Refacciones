@@ -10,7 +10,7 @@
     background: black
       url("/Img/Back_Landing.jpeg");
     background-size: 120%;
-    color: white;
+    color: rgb(30, 8, 8);
   }
   .container {
     width: 100%;

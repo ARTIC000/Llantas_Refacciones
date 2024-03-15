@@ -16,14 +16,12 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<link rel="stylesheet" href="Css/dashboard.css">
+		<link rel="stylesheet" href="/Css/dashboard.css">
 		<title>Admin Dashboard</title>
    	</head>
    	<body>
-		<!--ml-auto = add marging to the left side-->
-
-   		<nav class="navbar navbar-expand-md navbar-light">
-			<button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+   		<nav class="navbar navbar-expand-md navbar-dark">
+			<button class="navbar-toggler ml-auto mb-2 bg-dark" type="button" data-toggle="collapse" data-target="#myNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -32,9 +30,9 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 					<div class="row">
 						<!-- sidebar -->
 						<div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
-							<a href="#" class="navbar-brand text-white d-block  mx-auto text-center py-3 mb-4 bottom-border">CodeAndCreate</a>
+							<a href="#" class="navbar-brand text-white d-block  mx-auto text-center py-3 mb-4 bottom-border">Welcome</a>
 							<div class="bottom-border pb-3">
-								<img src="images/admin.jpeg" width="50" class="rounded-circle mr-3">
+								<img src="/Img/Logo.jpeg" width="50" class="rounded-circle mr-3">
 								<a href="#" class="text-white"> Helen Smith</a>
 							</div>
 							<ul class="navbar-nav flex-column mt-4">
@@ -45,7 +43,6 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>Analytics</a></li>
 								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-bar text-light fa-lg mr-3"></i>Charts</a></li>
 								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>Tables</a></li>
-								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>Settings</a></li>
 								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-file-alt text-light fa-lg mr-3"></i>Documentation</a></li>
 							</ul>
 						</div>
@@ -183,196 +180,160 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 		</section>
 		<!-- end of cards-->
 
-		<!-- Formulario --->
-		<section>
-			<div class="container">
-				<div class="row mb-5">
-				<div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
-				<?php
-					include 'php/formulario.php';
-				?>
-				</div>
-			</div>
-		</section>
-
-
 		<!-- tables-->
-
-		<section>
-			<div class="container-fluid">
-				<div class="row mb-5">
-					<div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
-						<div class="row align-items-center">
-							<div class="col-xl-6 col-12 mb-4 mb-xl-0">
-								<h3 class="text-muted text-center mb-3">Staff Salary</h3>
-								<table class="table table-striped bg-light text-center">
-									<thead>
-										<tr class="text-muted">
-											<th>#</th>
-											<th>Name</th>
-											<th>Salary</th>
-											<th>Date</th>
-											<th>Contact</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>1</th>
-											<td>John</td>
-											<td>$2000</td>
-											<td>25/05/2018</td>
-											<td><button class="btn btn-info btn-sm">Message</button></td>
-										</tr>
-										<tr>
-											<th>2</th>
-											<td>Ann</td>
-											<td>$2000</td>
-											<td>25/05/2018</td>
-											<td><button class="btn btn-info btn-sm">Message</button></td>
-										</tr>
-										<tr>
-											<th>3</th>
-											<td>Mark</td>
-											<td>$2000</td>
-											<td>25/05/2018</td>
-											<td><button class="btn btn-info btn-sm">Message</button></td>
-										</tr>
-										<tr>
-											<th>4</th>
-											<td>Mary</td>
-											<td>$2000</td>
-											<td>25/05/2018</td>
-											<td><button class="btn btn-info btn-sm">Message</button></td>
-										</tr>
-										<tr>
-											<th>5</th>
-											<td>Bob</td>
-											<td>$2000</td>
-											<td>25/05/2018</td>
-											<td><button class="btn btn-info btn-sm">Message</button></td>
-										</tr>
-									</tbody>
-								</table>
-								<!-- navigation -->
-								<nav>
-									<ul class="pagination justify-content-center">
-										<li class="page-item">
-											<a href="" class="page-link py-2 px-3">
-												<span>&laquo;</span>
-											</a>
-										</li>
-										<li class="page-item active">
-											<a href="" class="page-link py-2 px-3">
-												<span>1</span>
-											</a>
-										</li>
-										<li class="page-item">
-											<a href="" class="page-link py-2 px-3">
-												<span>2</span>
-											</a>
-										</li>
-										<li class="page-item">
-											<a href="" class="page-link py-2 px-3">
-												<span>3</span>
-											</a>
-										</li>
-										<li class="page-item">
-											<a href="" class="page-link py-2 px-3">
-												<span>&raquo;</span>
-											</a>
-										</li>
-									</ul>
-								</nav>
-								<!-- end of navigation -->
-							</div>
-
-							<div class="col-12 col-xl-6 mb-4 mb-xl-0">
-								<h3 class="text-muted text-center mb-3">Recent Payments</h3>
-								<table class="table text-center table-dark table-hover">
-									<thead>
-										<tr class="text-muted">
-											<th>#</th>
-											<th>Name</th>
-											<th>Price</th>
-											<th>Date</th>
-											<th>Status</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>1</th>
-											<td>Monica</td>
-											<td>$2000</td>
-											<td>25/05/2018</td>
-											<td><span class="badge badge-success w-75 py-2">Approved</span></td>
-										</tr>
-										<tr>
-											<th>2</th>
-											<td>Nick</td>
-											<td>$2000</td>
-											<td>25/05/2018</td>
-											<td><span class="badge badge-success  w-75 py-2">Approved</span></td>
-										</tr>
-										<tr>
-											<th>3</th>
-											<td>Alex</td>
-											<td>$2000</td>
-											<td>25/05/2018</td>
-											<td><span class="badge badge-danger  w-75 py-2">Pending</span></td>
-										</tr>
-										<tr>
-											<th>4</th>
-											<td>Jane</td>
-											<td>$2000</td>
-											<td>25/05/2018</td>
-											<td><span class="badge badge-danger  w-75 py-2">Pending</span></td>
-										</tr>
-										<tr>
-											<th>5</th>
-											<td>Michael</td>
-											<td>$2000</td>
-											<td>25/05/2018</td>
-											<td><span class="badge badge-success  w-75 py-2">Approved</span></td>
-										</tr>
-									</tbody>
-								</table>
-								<!-- navigation -->
-								<nav>
-									<ul class="pagination justify-content-center">
-										<li class="page-item">
-											<a href="" class="page-link py-2 px-3">
-												<span>Previous</span>
-											</a>
-										</li>
-										<li class="page-item active">
-											<a href="" class="page-link py-2 px-3">
-												<span>1</span>
-											</a>
-										</li>
-										<li class="page-item">
-											<a href="" class="page-link py-2 px-3">
-												<span>2</span>
-											</a>
-										</li>
-										<li class="page-item">
-											<a href="" class="page-link py-2 px-3">
-												<span>3</span>
-											</a>
-										</li>
-										<li class="page-item">
-											<a href="" class="page-link py-2 px-3">
-												<span>Next</span>
-											</a>
-										</li>
-									</ul>
-								</nav>
-								<!-- end of navigation -->
-							</div>
+    <section>
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-xl-6 mb-4 mb-xl-0">
+                            <h3 class="text-muted text-center mb-3">Recent Payments</h3>
+                            <table class="table text-center table-dark table-hover">
+                                <thead>
+                                    <tr class="text-muted">
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Monica</td>
+                                        <td>$2000</td>
+                                        <td>25/05/2018</td>
+                                        <td><span class="badge badge-success w-75 py-2">Approved</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Nick</td>
+                                        <td>$2000</td>
+                                        <td>25/05/2018</td>
+                                        <td><span class="badge badge-success  w-75 py-2">Approved</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>Alex</td>
+                                        <td>$2000</td>
+                                        <td>25/05/2018</td>
+                                        <td><span class="badge badge-danger  w-75 py-2">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                        <td>Jane</td>
+                                        <td>$2000</td>
+                                        <td>25/05/2018</td>
+                                        <td><span class="badge badge-danger  w-75 py-2">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>5</th>
+                                        <td>Michael</td>
+                                        <td>$2000</td>
+                                        <td>25/05/2018</td>
+                                        <td><span class="badge badge-success  w-75 py-2">Approved</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- navigation -->
+                            <nav>
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a href="" class="page-link py-2 px-3">
+                                            <span>Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="" class="page-link py-2 px-3">
+                                            <span>1</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="" class="page-link py-2 px-3">
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="" class="page-link py-2 px-3">
+                                            <span>3</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="" class="page-link py-2 px-3">
+                                            <span>Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- end of navigation -->
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <!-- Formulario -->
+						<div class="container">
+							<h3 class="text-muted text-center mb-3"> Expediente autos</h3>
+							<form action="php/guardar_datos.php" method="post">
+								<div class="form-group row">
+									<label for="medida" class="col-sm-2 col-form-label">Medida</label>
+									<div class="col-sm-10">
+										<input type="text" id="medida" name="medida" class="form-control" required style="background-color: rgb(24, 23, 23, 0.74); border-color:black; color:aliceblue">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="marca" class="col-sm-2 col-form-label">Marca</label>
+									<div class="col-sm-10">
+										<input type="text" id="marca" name="marca" class="form-control" required style="background-color: rgb(24, 23, 23, 0.74); border-color:black; color:aliceblue">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="gama" class="col-sm-2 col-form-label">Gama</label>
+									<div class="col-sm-10">
+										<input type="text" id="gama" name="gama" class="form-control" required style="background-color: rgb(24, 23, 23, 0.74); border-color:black; color:aliceblue">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="descripcion" class="col-sm-2 col-form-label">Descripción</label>
+									<div class="col-sm-10">
+										<input type="text" id="descripcion" name="descripcion" class="form-control" required style="background-color: rgb(24, 23, 23, 0.74); border-color:black; color:aliceblue">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="ic_rv" class="col-sm-2 col-form-label">IC/RV</label>
+									<div class="col-sm-10">
+										<input type="text" id="ic_rv" name="ic_rv" class="form-control" required style="background-color: rgb(24, 23, 23, 0.74); border-color:black; color:aliceblue">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="vehiculos" class="col-sm-2 col-form-label">Vehículos</label>
+									<div class="col-sm-10">
+										<input type="text" id="vehiculos" name="vehiculos" class="form-control" required style="background-color: rgb(24, 23, 23, 0.74); border-color:black; color:aliceblue">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="precio_list" class="col-sm-2 col-form-label">Precio Lista</label>
+									<div class="col-sm-10">
+										<input type="text" id="precio_list" name="precio_list" class="form-control" required style="background-color: rgb(24, 23, 23, 0.74); border-color:black; color:aliceblue">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="stock" class="col-sm-2 col-form-label">Stock</label>
+									<div class="col-sm-10">
+										<input type="text" id="stock" name="stock" class="form-control" required style="background-color: rgb(24, 23, 23, 0.74); border-color:black; color:aliceblue">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class=" offset-sm-2">
+										<button type="submit" name="action" value="agregar" class="btn btn-primary" style="background-color: red; border-color:black">Registrar</button>
+									</div>
+								</div>
+							</form>
+							</div>                        
 						</div>
-					</div>
-				</div>
-			</div>			
-		</section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 		<!-- end of tables-->
 
 		<!-- progress/task list-->
