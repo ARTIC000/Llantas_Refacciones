@@ -33,7 +33,7 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 							<a href="#" class="navbar-brand text-white d-block  mx-auto text-center py-3 mb-4 bottom-border">Welcome</a>
 							<div class="bottom-border pb-3">
 								<img src="/Img/Logo.jpeg" width="50" class="rounded-circle mr-3">
-								<a href="#" class="text-white"> Helen Smith</a>
+								<a href="#" class="text-white"> Admin</a>
 							</div>
 							<ul class="navbar-nav flex-column mt-4">
 								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 current"><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
@@ -90,13 +90,14 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-success" data-dismiss="modal">Stay here</button>
-						<button type="button" class="btn btn-danger" data-dismiss="modal">Logout</button>
+						<button type="button" class="btn btn-danger" id="logout-btn">Logout</button>
 					</div>
-
 				</div>
 			</div>
 		</div>
 		<!-- end of modal -->
+
+
 
 
 	<!--Cards-->
@@ -344,26 +345,26 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 						<div class="row mb-4 alignt-items-center">
 							<div class="col-xl-6 col-12 mb-4 mb-xl-0">
 								<div class="bg-dark text-white p-4 rounded">
-									<h4 class="mb-5">Conversion Rates</h4>
-									<h6 class="mb-3">Google Chrome</h6>
+									<h4 class="mb-5">Stock of the product</h4>
+									<h6 class="mb-3">Pirelli tire</h6>
 									<div class="progress mb-4" style="height: 20px">
 										<div class="progress-bar progress-bar-striped font-weight-bold" style="width:91%">
 											91%
 										</div>
 									</div>
-									<h6 class="mb-3">Mozilla Firefox</h6>
+									<h6 class="mb-3">Mobil oil</h6>
 									<div class="progress mb-4" style="height: 20px">
 										<div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width:82%">
 											82%
 										</div>
 									</div>
-									<h6 class="mb-3">Safari</h6>
+									<h6 class="mb-3">Bardahl tire</h6>
 									<div class="progress mb-4" style="height: 20px">
 										<div class="progress-bar progress-bar-striped font-weight-bold bg-danger" style="width:67%">
 											67%
 										</div>
 									</div>
-									<h6 class="mb-3">IE</h6>
+									<h6 class="mb-3">Michelin tire</h6>
 									<div class="progress mb-4" style="height: 20px">
 										<div class="progress-bar progress-bar-striped font-weight-bold" style="width:10%">
 											10%
@@ -454,12 +455,11 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 					<div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
 						<div class="row align-items-center mb-5">
 							<div class="col-xl-7">
-								<h4 class="text-muted mb-4" >Recent Customer Activities</h4>
+								<h4 class="text-muted mb-4" >Services</h4>
 								<div id="accordion">
-									<div class="card">
+									<div class="card" style="background-color:  rgb(24, 23, 23, 1); color:aliceblue">
 										<div class="card-header">
 											<button class="btn btn-block bg-secondary text-light text-align-left" data-toggle="collapse" data-target="#collapseOne">
-												<img src="images/cust1.jpeg" width="50" class="mr-3 rounded">
 												John posted a new comment
 											</button>
 										</div>
@@ -469,10 +469,9 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 											</div>
 										</div>
 									</div>
-									<div class="card">
+									<div class="card" style="background-color:  rgb(24, 23, 23, 1); color:aliceblue">
 										<div class="card-header">
 											<button class="btn btn-block bg-secondary text-light text-align-left" data-toggle="collapse" data-target="#collapseTwo">
-												<img src="images/cust2.jpeg" width="50" class="mr-3 rounded">
 												Mark posted a new comment
 											</button>
 										</div>
@@ -483,10 +482,9 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 										</div>
 									</div>
 
-									<div class="card">
+									<div class="card" style="background-color:  rgb(24, 23, 23, 1); color:aliceblue">
 										<div class="card-header">
 											<button class="btn btn-block bg-secondary text-light text-align-left" data-toggle="collapse" data-target="#collapseThree">
-												<img src="images/cust3.jpeg" width="50" class="mr-3 rounded">
 												Monica posted a new comment
 											</button>
 										</div>
@@ -497,10 +495,9 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 										</div>
 									</div>
 
-									<div class="card">
+									<div class="card" style="background-color:  rgb(24, 23, 23, 1); color:aliceblue">
 										<div class="card-header">
 											<button class="btn btn-block bg-secondary text-light text-align-left" data-toggle="collapse" data-target="#collapseFour">
-												<img src="images/cust4.jpeg" width="50" class="mr-3 rounded">
 												Vivian posted a new comment
 											</button>
 										</div>
@@ -514,13 +511,13 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 							</div>
 							<div class="col-xl-5 mt-5">
 								<div class="card rounded">
-									<div class="card-body">
-										<h5 class="text-muted text-center mb-4">Quick Status Post</h5>
+									<div class="card-body" style="background-color:  rgb(24, 23, 23, 1); color:aliceblue;">
+										<h5 class="text-muted text-center mb-4">Promotions</h5>
 										<ul class="list-inline text-center py-3">
 											<li class="list-inline-item mr-4">
 												<a href="#">
 													<i class="fas fa-pencil-alt text-success"></i>
-													<span class="h6 text-muted">Status</span>
+													<span class="h6 text-muted">Product</span>
 												</a>
 											</li>
 											<li class="list-inline-item mr-4">
@@ -532,19 +529,19 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 											<li class="list-inline-item">
 												<a href="#">
 													<i class="fas fa-map-marker-alt text-primary"></i>
-													<span class="h6 text-muted">Checkin</span>
+													<span class="h6 text-muted">Price</span>
 												</a>
 											</li>
 										</ul>
 										<form>
 											<div class="form-group">
 												<input type="text" class="form-control py-2 mb-3" placeholder="What's your status...">
-												<button type="button" class="btn btn-block text-uppercase font-weight-bold text-light bg-info py2 mb-5">Submit post</button> 
+												<button type="button" class="btn btn-block text-uppercase font-weight-bold text-light bg-info py2 mb-5">Submit</button> 
 											</div>
 										</form>
 										<div class="row">
 											<div class="col-6">
-												<div class="card bg-light">
+												<div class="card bg-dark">
 													<i class="far fa-calendar-alt fa-8x text-warning d-block m-auto py-3"></i>
 													<div class="card-body">
 														<p class="card-text text-center font-weight-bold text-uppercase">Mon, may 26</p>
@@ -552,7 +549,7 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 												</div>
 											</div>
 											<div class="col-6">
-												<div class="card bg-light">
+												<div class="card bg-dark">
 													<i class="far fa-clock fa-8x text-danger d-block m-auto py-3"></i>
 													<div class="card-body">
 														<p class="card-text text-center font-weight-bold text-uppercase">3:50 AM</p>
@@ -579,23 +576,15 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 							<div class="col-lg-6 text-center">
 								<ul class="list-inline">
 									<li class="list-inline-item mr-2">
-										<a href="#" class="text-dark">CodeAndCreate</a>
+										<a href="#" class="text-dark">Universal LLantas Y suspensiones</a>
 									</li>
 									<li class="list-inline-item mr-2">
 										<a href="#" class="text-dark">About</a>
 									</li>
 									<li class="list-inline-item mr-2">
-										<a href="#" class="text-dark">Support</a>
-									</li>
-									<li class="list-inline-item mr-2">
-										<a href="#" class="text-dark">Blog</a>
+										<a href="#" class="text-dark">Privacity</a>
 									</li>
 								</ul>
-							</div>
-							<div class="col-lg-6 text-center">
-								<p>&copy; 2018. Made with <i class="fas fa-heart text-danger"></i> by <span class="text-success">CodeAndCreate</span>
-
-								</p>
 							</div>
 						</div>
 					</div>
@@ -611,6 +600,7 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 		<script src="Js/dash.js"></script>
+		<script src="/Js/logout.js"></script>
   	</body>
 </html>
 

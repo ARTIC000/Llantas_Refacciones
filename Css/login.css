@@ -1,74 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  body {
-    background: black
-      url("/Img/Back_Landing.jpeg");
-    background-size: 120%;
-    color: rgb(30, 8, 8);
-  }
-  .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 10px;
-  }
-  .login {
-    width: 30%;
-    display: flex;
-    padding: 30px 40px;
-    flex-direction: column;
-    gap: 30px;
-  
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  
-  .input > input,
-  button {
-    width: 100%;
-    height: 40px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-  }
-  button {
-    background-color: #bd0c47;
-    height: 40px;
-    padding: 10px;
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .login > p {
-    text-align: center;
-    color: #bd0c47;
-  }
-  
-  .icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .icons > .img {
-    width: 30%;
-    padding: 5px 10px;
-    background: rgba(255, 255, 255, 0.678);
-    justify-content: center;
-    display: inherit;
-    border-radius: 10px;
-    cursor: pointer;
-  }
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%) saturate(70%) contrast(70%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+  width: 30%;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.input {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input > input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.input > input:focus + label, .input > input.filled + label {
+  transform: translateY(-20px);
+  color: #bd0c47;
+}
+
+.label {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+button {
+  background-color: #bd0c47;
+  height: 50px; 
+  width: 100%; 
+  margin-top: 20px; 
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.login > p {
+  text-align: center;
+  color: #bd0c47;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons > .img {
+  width: 30%;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.678);
+  justify-content: center;
+  display: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+}
