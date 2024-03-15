@@ -17,7 +17,7 @@ body {
 /* Estilo para los productos */
 .card {
   background-color: #242525;
-  border: 1px solid white;
+  
 
 }
 
@@ -28,11 +28,14 @@ body {
 }
 
 .card-img-top {
-
+ background: transparent;
  
   object-fit: cover;
 }
 
+.card-img-top:hover .details-btn {
+  opacity: 1;
+}
 
   
 
@@ -119,6 +122,35 @@ h2:hover {
   transform: scale(1.1);
 }
 
+.cart-btn{
+  margin-top: 10%;
+  background-color: #A90015;
+  border-color: #A90015;
+}
+
+.cart-btn:hover{
+  background-color: #A90015;
+  border-color: #A90015;
+}
+
+.details-btn{
+  background-color: black;
+  border-color: white;
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+}
+
+.details-btn:hover{
+  background-color: black;
+  border-color: white;
+  opacity: 1;
+  
+}
+
 
 
 @media (min-width: 992px) {
@@ -149,6 +181,24 @@ h2:hover {
     width: 50%;
     padding-top: 5px;
   }
+
+  
+.navbar.fixed-top {
+	background-color: black;
+	z-index: 1000;
+}
+
+.navbar.fixed-top .navbar-nav .dropdown-menu {
+	background-color: rgba(132, 32, 32, 0.649);
+}
+
+.navbar.fixed-top .navbar-nav .dropdown-menu a {
+	color: white;
+}
+
+.navbar.fixed-top .navbar-nav .dropdown-menu a:hover {
+	background-color: #333;
+}
 
   .jumbotron {
     margin-top: -90px;

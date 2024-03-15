@@ -73,6 +73,8 @@ body {
 	font-size: 14px;
 	font-weight: lighter;
 	color: #acacac;
+	text-align: center;
+	text-justify: auto;
 }
 .workingspace {
 	background-color: #f7000043; 
