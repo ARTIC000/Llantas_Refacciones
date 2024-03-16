@@ -210,3 +210,13 @@ h2:hover {
     margin-top: 40px;
   }
 }
+
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.filter-card:hover {
+  transform: none;
+  box-shadow: none;
+}
