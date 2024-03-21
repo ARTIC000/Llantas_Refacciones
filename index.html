@@ -40,7 +40,9 @@
             <i class="fas fa-shopping-cart"></i>
           </a>
         </li>
-      </div>
+        <button onclick="cambiarColor()">
+          <i id="icono-color" class="fas fa-moon"></i>
+        </button>
     </div>
   </div>
 </nav>
@@ -65,24 +67,25 @@
   <div class="row justify-content-center">
     <div class="col-sm mb-3" style="color: rgb(183, 180, 176);">
       <div class="info-panel">
-        <h2 class="display-5">Performance<br>Check</h2>
+        <h2 class="display-5 text-center">Performance<br>Check</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laboriosam officiis, esse sint at beatae sunt iusto corrupti quam dicta, reiciendis aut facere, eveniet quis error autem praesentium vitae excepturi!</p>
       </div>
     </div>
     <div class="col-lg mb-3" style="color: rgb(183, 180, 176);">
       <div class="info-panel">
-        <h2 class="display-5">Auto<br>Repair</h2>
+        <h2 class="display-5 text-center">Auto<br>Repair</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eveniet laboriosam, eum ex laudantium, sunt optio quas repellendus dignissimos corrupti aliquid consequatur officiis delectus aperiam ducimus incidunt aut quo voluptas?.</p>
       </div>
     </div>
     <div class="col-lg mb-3" style="color: rgb(183, 180, 176);">
       <div class="info-panel">
-        <h2 class="display-5">Fleet<br>Services</h2>
+        <h2 class="display-5 text-center">Fleet<br>Services</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae fugit tempore, reiciendis minima laboriosam excepturi dolores quo, dignissimos ipsum quam sunt at est? Similique, illum suscipit consequuntur esse omnis inventore.</p>
       </div>
     </div>
   </div>
 </div>
+
  <!-- Servicios -->
  <div class="row workingspace animated-section" style="background-color: rgba(24, 23, 23, 0.74); margin-top: 7%;">
   <div class="col-lg-4">
@@ -98,19 +101,22 @@
 <div class="circle-container" style="margin-top: 7%;">
   <div class="circle-row">
     <div class="circle" data-info="info1">
-      <div class="circle-inner">1</div>
+      <div class="circle-inner"><i class="fas fa-search"></i></div> 
     </div>
     <div class="circle" data-info="info2">
-      <div class="circle-inner">2</div>
+      <div class="circle-inner"><i class="fas fa-user-md"></i></div> 
     </div>
     <div class="circle" data-info="info3">
-      <div class="circle-inner">3</div>
+      <div class="circle-inner"><i class="fas fa-wrench"></i></div>
     </div>
   </div>
-  <div class="info-container" style="color: aliceblue; text-align: center; margin-left: 5%; margin-right: 5%;">
-    <div id="info1" class="info-text"><h2 style="color: red;">Inspection</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus ea qui velit facilis nobis earum, quod perferendis eligendi facere placeat optio nisi? Provident adipisci officiis ipsam exercitationem ut rerum.</p></div>
-    <div id="info2" class="info-text"><h2 style="color: red;">Diagnostic</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente quo, modi nihil eligendi sint iusto reprehenderit alias, dolorem quidem, nulla ipsam. Id sequi explicabo cum blanditiis consequatur molestiae repellendus molestias.</p></div>
-    <div id="info3" class="info-text"><h2 style="color: red;">Upgrades</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores nostrum ipsam aliquam aliquid non ullam in quod dignissimos iusto atque nisi, velit adipisci, pariatur molestias facere reprehenderit expedita libero provident?</p></div>
+  <div class="info-container" style="text-align: center; margin-left: 5%; margin-right: 5%;">
+    <div id="info1" class="info-text"><h2 style="color: red;">Inspection</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus ea qui velit facilis nobis earum, quod perferendis eligendi facere placeat optio nisi? Provident adipisci officiis ipsam exercitationem ut rerum.</p></div>
+    <div id="info2" class="info-text"><h2 style="color: red;">Diagnostic</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente quo, modi nihil eligendi sint iusto reprehenderit alias, dolorem quidem, nulla ipsam. Id sequi explicabo cum blanditiis consequatur molestiae repellendus molestias.</p></div>
+    <div id="info3" class="info-text"><h2 style="color: red;">Upgrades</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores nostrum ipsam aliquam aliquid non ullam in quod dignissimos iusto atque nisi, velit adipisci, pariatur molestias facere reprehenderit expedita libero provident?</p></div>
   </div>
 </div>
 <!-- Table of content -->
@@ -206,5 +212,6 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/Js/anim.js"></script>
+<script src="/Js/color.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </html>

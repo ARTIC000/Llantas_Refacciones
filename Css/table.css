@@ -1,6 +1,5 @@
 :root {
   --primary: rgb(211, 38, 38);
-  --overlay: rgba(211, 38, 38, 0.6);
 }
 
 * {
@@ -12,8 +11,6 @@
 body {
   height: 100vh;
   place-items: center;
-  background-color: black;
-  color: rgba(255, 255, 255, 0.85);
 }
 
 main {
@@ -26,7 +23,7 @@ main header {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-bottom: 2.25rem;
-  color: white;
+  color: rgb(106, 4, 19);
 }
 
 main header span {
@@ -51,10 +48,12 @@ main section {
   padding: 1rem;
   border: 1px solid transparent;
   cursor: pointer;
+  color: aliceblue;
 }
 
 .tabs {
   position: relative;
+  color: aliceblue;
 }
 
 .tab {
@@ -63,7 +62,6 @@ main section {
   width: 530px;
   height: 225px;
   opacity: 0;
-  background-color: black;
   overflow: hidden;
   z-index: 10;
 }
@@ -127,7 +125,6 @@ main section {
   width: inherit;
   height: inherit;
   object-fit: cover;
-  filter: grayscale(100%);
 }
 
 @keyframes content {
