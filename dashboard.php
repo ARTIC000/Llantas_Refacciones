@@ -12,11 +12,11 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 	<head>
     	<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="title icon" href="Img/top.png">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link rel="stylesheet" href="/Css/dashboard.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<title>Admin Dashboard</title>
    	</head>
    	<body>
@@ -39,7 +39,7 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 current"><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
 								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>Profile</a></li>
 								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-envelope text-light fa-lg mr-3"></i>Inbox</a></li>
-								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>Sales</a></li>
+								<li class="nav-item"><a href="/php/Productos/crud.php" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>Sales</a></li>
 								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>Analytics</a></li>
 								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-bar text-light fa-lg mr-3"></i>Charts</a></li>
 								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>Tables</a></li>
@@ -97,10 +97,7 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 		</div>
 		<!-- end of modal -->
 
-
-
-
-	<!--Cards-->
+		<!--Cards-->
 		<section>
 			<div class="container-fluid">
 				<div class="row">
@@ -444,10 +441,6 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 				</div>
 			</div>
 		</section>
-
-		<!-- end of progress/task list-->
-
-
 		<!-- other section-->
 		<section>
 			<div class="container-fluid">
