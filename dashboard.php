@@ -36,18 +36,14 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 								<a href="#" class="text-white"> Admin</a>
 							</div>
 							<ul class="navbar-nav flex-column mt-4">
-								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 current"><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
-								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>Profile</a></li>
-								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-envelope text-light fa-lg mr-3"></i>Inbox</a></li>
+								<li class="nav-item"><a href="/dashboard.php" class="nav-link text-white p-3 mb-2 sidebar-link current"><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
+								<li class="nav-item"><a href="#inbox" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-envelope text-light fa-lg mr-3"></i>Inbox</a></li>
 								<li class="nav-item"><a href="/php/Productos/crud.php" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>Sales</a></li>
-								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>Analytics</a></li>
-								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-bar text-light fa-lg mr-3"></i>Charts</a></li>
-								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>Tables</a></li>
-								<li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-file-alt text-light fa-lg mr-3"></i>Documentation</a></li>
+								<li class="nav-item"><a href="#analytics" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>Analytics</a></li>
+								<li class="nav-item"><a href="#charts" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-bar text-light fa-lg mr-3"></i>Charts</a></li>
+								<li class="nav-item"><a href="#documentation" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-file-alt text-light fa-lg mr-3"></i>Documentation</a></li>
 							</ul>
 						</div>
-						<!-- end of sidebar -->
-
 						<!-- top nav -->
 						<div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top py-2 top-navbar">
 							<div class="row align-items-center">
@@ -76,7 +72,6 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 				</div>
 			</div>
 		</nav>
-
 		<!-- modal-->
 		<div class="modal fade" id="sign-out">
 			<div class="modal-dialog">
@@ -95,8 +90,6 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 				</div>
 			</div>
 		</div>
-		<!-- end of modal -->
-
 		<!--Cards-->
 		<section>
 			<div class="container-fluid">
@@ -176,8 +169,6 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 				</div>
 			</div>
 		</section>
-		<!-- end of cards-->
-
 		<!-- tables-->
     <section>
         <div class="container-fluid">
@@ -332,10 +323,8 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
             </div>
         </div>
     </section>
-		<!-- end of tables-->
-
 		<!-- progress/task list-->
-		<section>
+		<section id="analytics">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
@@ -442,7 +431,7 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 			</div>
 		</section>
 		<!-- other section-->
-		<section>
+		<section id="charts">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
@@ -558,8 +547,6 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 				</div>
 			</div>		
 		</section>
-		<!-- end of other section-->
-
 		<!-- footer-->
 		<footer>
 			<div class="container-fluid">
@@ -583,12 +570,7 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 					</div>
 				</div>
 			</div>
-
-
 		</footer>
-		<!-- end of footer-->
-
-
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
