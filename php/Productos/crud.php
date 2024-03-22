@@ -174,7 +174,6 @@ if (isset($_SESSION['id_rol']) && $_SESSION['id_rol'] == 2) {
 				</div>
 			</div>
 		</section>
-		<!-- end of cards-->
         <!-- Agregar Producto -->
 <div class="col-xl-10 col-lg-9 col-md-8 ml-auto" style="color: white;">
         <button onclick="mostrarFormularioAgregar()">Agregar Producto</button>
